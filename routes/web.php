@@ -23,6 +23,7 @@ Route::get('/team',[App\Http\Controllers\Frontend\HomeController::class,'team'])
 Route::get('/clients',[App\Http\Controllers\Frontend\HomeController::class,'clients'])->name('fronts.clients');
 Route::get('/politics',[App\Http\Controllers\Frontend\HomeController::class,'politics'])->name('fronts.politics');
 Route::get('/questions',[App\Http\Controllers\Frontend\HomeController::class,'questions'])->name('fronts.questions');
+Route::post('/storecontactus',[App\Http\Controllers\Frontend\HomeController::class,'storecontactus'])->name('storecontactus');
 Route::get('/contact',[App\Http\Controllers\Frontend\CommonController::class,'contact'])->name('fronts.contact');
 Route::post('/contact/sava',[App\Http\Controllers\Frontend\CommonController::class,'sava'])->name('fronts.contact.sava');
 

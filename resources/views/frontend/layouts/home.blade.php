@@ -45,7 +45,7 @@
                             <p>{{ __('message.operations3') }}</p>
                         </div>
                         <div class="service-heading">
-                            <a class="circle-read-more" href="#">
+                            <a class="circle-read-more" href="{{route('fronts.services')}}">
                                 <h3 style="font-family: cairo;">{{ __('message.operations2') }}</h3>
                                 <i class="flaticon-right-1"></i>
                             </a>
@@ -60,7 +60,7 @@
                             <p>{{ __('message.operations5') }}</p>
                         </div>
                         <div class="service-heading">
-                            <a class="circle-read-more" href="#">
+                            <a class="circle-read-more" href="{{route('fronts.services')}}">
                                 <h3 style="font-family: cairo;">{{ __('message.operations4') }}</h3>
                                 <i class="flaticon-right-1"></i>
                             </a>
@@ -75,7 +75,7 @@
                             <p>{{ __('message.operations7') }}</p>
                         </div>
                         <div class="service-heading">
-                            <a class="circle-read-more" href="#">
+                            <a class="circle-read-more" href="{{route('fronts.services')}}">
                                 <h3 style="font-family: cairo;">{{ __('message.operations6') }}</h3>
                                 <i class="flaticon-right-1"></i>
                             </a>
@@ -90,7 +90,7 @@
                             <p>{{ __('message.operations9') }}</p>
                         </div>
                         <div class="service-heading">
-                            <a class="circle-read-more" href="#">
+                            <a class="circle-read-more" href="{{route('fronts.services')}}">
                                 <h3 style="font-family: cairo;">{{ __('message.operations8') }}</h3>
                                 <i class="flaticon-right-1"></i>
                             </a>
@@ -111,7 +111,7 @@
                         <span>{{ __('message.know') }}</span>
                         <p style="font-family: cairo;">{{ __('message.knows') }}
                         <p>
-                            <a class="default-btn" href="#">
+                            <a class="default-btn" href="{{route('fronts.aboutus')}}">
                                 {{ __('message.aboutus') }}
                             </a>
                     </div>
@@ -223,22 +223,22 @@
                         <div class="tab quote-list-tab choose-tab">
                             <ul class="tabs">
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('fronts.aboutus')}}">
                                         {{ __('message.mission') }}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('fronts.aboutus')}}">
                                         {{ __('message.vission') }}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('fronts.aboutus')}}">
                                         {{ __('message.goals') }}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('fronts.aboutus')}}">
                                         {{ __('message.who') }}
                                     </a>
                                 </li>
@@ -246,25 +246,25 @@
                             <div class="tab_content">
                                 <div class="tabs_item">
                                     <p>{!! $aboutus->mission !!}</p>
-                                    <a class="default-btn" href="about-us.html">
+                                    <a class="default-btn" href="{{route('fronts.aboutus')}}">
                                         {{ __('message.learn') }}
                                     </a>
                                 </div>
                                 <div class="tabs_item">
                                     <p>{!! $aboutus->vission !!}</p>
-                                    <a class="default-btn" href="about-us.html">
+                                    <a class="default-btn" href="{{route('fronts.aboutus')}}">
                                         {{ __('message.learn') }}
                                     </a>
                                 </div>
                                 <div class="tabs_item">
                                     <p>{!! $aboutus->goals !!}</p>
-                                    <a class="default-btn" href="about-us.html">
+                                    <a class="default-btn" href="{{route('fronts.aboutus')}}">
                                         {{ __('message.learn') }}
                                     </a>
                                 </div>
                                 <div class="tabs_item">
                                     <p>{!! $aboutus->who !!}</p>
-                                    <a class="default-btn" href="about-us.html">
+                                    <a class="default-btn" href="{{route('fronts.aboutus')}}">
                                         {{ __('message.learn') }}
                                     </a>
                                 </div>

@@ -7,17 +7,16 @@
                         <div class="header-left-content">
                             <ul>
                                 <li>
-                                    <a href="tel:+502-464-679">
+                                    <a href="tel:{{$socials->phone}}">
                                         <i class="bx bx-phone-call"></i>
-                                        +502-464-679
+                                        {{$socials->phone}}
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         href="https://{{$socials->email}}">
                                         <i class="bx bx-envelope"></i>
-                                        <span class="__cf_email__"
-                                            data-cfemail="d8b0bdb4b4b798a8aabdaeb7a2f6bbb7b5">[email&#160;protected]</span>
+                                        <span class="__cf_email__">{{$socials->email}}</span>
                                     </a>
                                 </li>
                             </ul>
@@ -97,7 +96,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html" class="nav-link">
+                                        <a href="{{route('fronts.team')}}" class="nav-link">
                                             {{ __('message.pages') }}
                                             <i class='bx bx-chevron-down'></i>
                                         </a>

@@ -43,7 +43,7 @@
                         <li><a href="{{route('fronts.services')}}">{{ __('message.services') }}</a></li>
                         <li><a href="{{route('fronts.news')}}">{{ __('message.news') }}</a></li>
                         <li><a href="{{route('fronts.team')}}">{{ __('message.team') }}</a></li>
-                        <li><a href="#">{{ __('message.contact') }}</a></li>
+                        <li><a href="{{route('fronts.contact')}}">{{ __('message.contact') }}</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('content')
+@include('frontend.layouts.sidebar')
 
 <div class="page-title-area item-bg-1 jarallax" data-jarallax='{"speed": 0.3}' style="background-image:url({{ asset('admin/assets/images/logo.png') }})" >
     <div class="container" >
@@ -65,71 +66,62 @@
     </div>
 </div>
 <br>
-<section>
+
+<section class="faq-contact-area pb-100">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="contact-wrap contact-pages mb-0">
-                    <div class="contact-form">
-                        <div class="section-title">
-                            <span class="pumpkin-color">information</span>
-                            <h2>Drop us a message for any query</h2>
+        <div class="ask-question">
+            <div class="section-title">
+                <h2>Ask Question</h2>
+            </div>
+            <form id="contactForm" method="POST" action="{{route('fronts.contact.sava')}}" enctype="multipart/form-data" >
+                @csrf
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" required
+                                data-error="Please enter your name" placeholder="Your Name">
+                            <div class="help-block with-errors"></div>
                         </div>
-                        <form  method="POST" action="{{route('fronts.contact.sava')}}" enctype="multipart/form-data" >
-                            @csrf
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" required
-                                            data-error="Please enter your name" placeholder="Your Name">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control" required
-                                            data-error="Please enter your email" placeholder="Your Email">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="number" name="phone" id="phone_number" required
-                                            data-error="Please enter your number" class="form-control"
-                                            placeholder="Your Phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" name="subject" id="msg_subject" class="form-control"
-                                            required data-error="Please enter your subject"
-                                            placeholder="Your Subject">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30"
-                                            rows="5" required data-error="Write your message"
-                                            placeholder="Your Message"></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn btn-two">
-                                        Send Message
-                                    </button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </form>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" required
+                                data-error="Please enter your email" placeholder="Your Email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="number" name="phone" id="phone_number" required
+                                data-error="Please enter your number" class="form-control" placeholder="Your Phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="subject" id="msg_subject" class="form-control" required
+                                data-error="Please enter your subject" placeholder="Your Subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
+                                data-error="Write your message" placeholder="Your Message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="default-btn btn-two">
+                            <span class="label">Send Message</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </section>
-
 @endsection

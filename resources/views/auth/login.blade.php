@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 <div class="container">
-                    <img src="{{asset('admin/assets/images/logo.png')}}">
+                    <img src="{{asset('admin/assets/images/FB - Cover Photo.jpg')}}">
                     </div>
                 <hr>
                 <div class="login-form">

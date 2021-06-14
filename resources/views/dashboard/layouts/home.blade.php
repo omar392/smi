@@ -55,11 +55,11 @@
                             </a>
                         </div>
                         <div class="home_statics text-center">
-                            <h1 class="heading_title" style="color: #fff">لوجو الشركة</h1>
+                            <h1 class="heading_title" style="color: #fff">أس أم أى إكسبريس <br><br> SMI Express</h1>
 
                             <div style="width: 700px;">
                                 {{-- <h3>إس إم أى <br> خدمات توصيل الطرود والبضائع <br> خدمات العمليات للمتاجر الإلكترونية|صناع الحلول</h3> --}}
-                                <img src="{{asset('admin/assets/images/logo.png')}}" style="width: 200px;" >
+                                <img src="{{asset('admin/assets/images/FB - Cover Photo.jpg')}}" >
                                 <br>
                                 <br>
                                 <p>Copyright @2021 <a href="https://www.facebook.com/profile.php?id=100002626340909">omar asharf</a></p>

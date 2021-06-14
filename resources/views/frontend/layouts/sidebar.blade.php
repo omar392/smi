@@ -17,23 +17,21 @@
                 </div>
                 <div class="modal-body">
                     <div class="sidebar-modal-widget">
-                        <h3 class="title">About Us</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus
-                            eum laboriosam praesentium delectus unde magni aut perspiciatis cumque deserunt dolore
-                            voluptate, autem pariatur? Dicta pariatur.</p>
+                        <h3 class="title" style="font-family: cairo;">{{__('message.aboutus')}}</h3>
+                        <p>{!! $aboutus->who !!}</p>
                     </div>
                     <div class="sidebar-modal-widget" style="font-family: cairo;" >
                         <h3 class="title" style="font-family: cairo;" >{{ __('message.hpages') }}</h3>
                         <ul>
-                        <li><a href="#">{{ __('message.home') }}</a></li>
-                        <li><a href="#">{{ __('message.aboutus') }}</a></li>
-                        <li><a href="#">{{ __('message.services') }}</a></li>
-                        <li><a href="#">{{ __('message.news') }}</a></li>
-                        <li><a href="#">{{ __('message.team') }}</a></li>
-                        <li><a href="#">{{ __('message.contact') }}</a></li>
-                        <li><a href="#">{{ __('message.questions') }}</a></li>
-                        <li><a href="#">{{ __('message.politics') }}</a></li>
-                        <li><a href="#">{{ __('message.opinion') }}</a></li>
+                        <li><a href="{{ route('fronts.index') }}">{{ __('message.home') }}</a></li>
+                        <li><a href="{{route('fronts.aboutus')}}">{{ __('message.aboutus') }}</a></li>
+                        <li><a href="{{route('fronts.services')}}">{{ __('message.services') }}</a></li>
+                        <li><a href="{{route('fronts.news')}}">{{ __('message.news') }}</a></li>
+                        <li><a href="{{route('fronts.team')}}">{{ __('message.team') }}</a></li>
+                        <li><a href="{{route('fronts.contact')}}">{{ __('message.contact') }}</a></li>
+                        <li><a href="{{route('fronts.questions')}}">{{ __('message.questions') }}</a></li>
+                        <li><a href="{{route('fronts.politics')}}">{{ __('message.politics') }}</a></li>
+                        <li><a href="{{route('fronts.clients')}}">{{ __('message.opinion') }}</a></li>
                         </ul>
                     </div>
                     <div class="sidebar-modal-widget">

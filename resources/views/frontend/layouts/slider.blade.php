@@ -12,7 +12,7 @@
                                 <a class="default-btn active" href="{{route('fronts.services')}}">
                                     {{ __('message.services') }}
                                 </a>
-                                <a class="default-btn white" href="#">
+                                <a class="default-btn white" href="{{route('fronts.contact')}}">
                                     {{ __('message.contact') }}
                                 </a>
                             </div>

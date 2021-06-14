@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 
 use App\Models\Aboutus;
+use App\Models\Common;
 use App\Models\Counter;
 use App\Models\Customer;
 use App\Models\Inbox;
@@ -47,6 +48,8 @@ class HomeController extends Controller
 
         $data['services'] = Service::all();
         $data['socials'] = Social::first();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.services.services',$data);
     }
 
@@ -54,40 +57,52 @@ class HomeController extends Controller
 
         $data['socials'] = Social::first();
         $data['news'] = News::all();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.news.news',$data);
     }
 
     public function team(){
         $data['socials'] = Social::first();
         $data['team']  = Team::all();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.team.team',$data);
     }
 
     public function clients(){
         $data['socials'] = Social::first();
         $data['opinions']  = Opinion::all();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.clients.clients',$data);
     }
 
     public function politics(){
         $data['socials'] = Social::first();
         $data['politics']  = Politic::all();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.politics.politics',$data);
     }
 
     public function questions(){
         $data['socials'] = Social::first();
         $data['questions']  = Question::all();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.questions.questions',$data);
     }
 
     public function contact(){
         $data['socials'] = Social::first();
+        $data['aboutus'] = Aboutus::first();
+
         return view('frontend.contact.contact',$data);
     }
 
     public function storecontactus(Request $request){
-        $data = new Inbox();
+        $data = new Common();
         $data->name = $request->name;
         $data->email = $request->email;
         $data->phone = $request->phone;

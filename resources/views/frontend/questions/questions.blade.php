@@ -3,6 +3,7 @@
 @section('content')
 @include('frontend.layouts.sidebar')
 
+
 <div class="page-title-area item-bg-1 jarallax" data-jarallax='{"speed": 0.3}'>
     <div class="container">
         <div class="page-title-content">
@@ -25,7 +26,9 @@
         </div>
     </div>
 </div>
-<br>
+<br><br>
+@include('dashboard.layouts.flash-message')
+
 
 <section class="faq-area ptb-100">
     <div class="container">
@@ -69,7 +72,7 @@
             <div class="section-title">
                 <h2>Ask Question</h2>
             </div>
-            <form id="contactForm" method="POST" action="{{route('fronts.contactus.store')}}" enctype="multipart/form-data" >
+            <form id="contactForm" method="POST" action="{{route('storecontactus')}}" enctype="multipart/form-data" >
                 @csrf
                 <div class="row">
                     <div class="col-lg-6 col-sm-6">
