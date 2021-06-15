@@ -1,4 +1,4 @@
-    <header class="header-area-four fixed-top">
+    <header class="header-area-four fixed-top" style="height: 45px;">
 
         <div class="header-style-four">
             <div class="container">
@@ -45,6 +45,17 @@
                                         <i class="bx bxl-linkedin"></i>
                                     </a>
                                 </li>
+                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                @if($localeCode == LaravelLocalization::getCurrentLocale())
+                                @elseif($url = LaravelLocalization::getLocalizedURL($localeCode))
+                                    <li>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                        class="nav-link"><img src="{{ asset('frontend/assets/img/flag/'.$properties['native'])  }}"
+                                        style="width: 30px;height:30px;">
+                                        </a>
+                                    </li>
+                                @endif
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -61,12 +72,12 @@
                     </a>
                 </div>
 
-                <div class="main-nav">
+                <div class="main-nav" style="height: 90px;">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <div class="container">
                             <a class="navbar-brand" href="index.html">
                                 <img src="{{ asset('admin/assets/images/logo.png') }}"
-                                    style="width: 200px;height: 100px;" alt="Logo">
+                                    style="width: 200px;height: 70px;" alt="Logo">
                             </a>
                             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                 <ul class="navbar-nav m-auto">
@@ -123,20 +134,9 @@
                                             {{ __('message.contact') }}
                                         </a>
                                     </li>
-                                    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                        <li class="nav-item">
-                                            <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
-                                                class="nav-link"><img src="{{ asset('frontend/assets/img/flag/'.$properties['native'])  }}"
-                                                    style="width: 50px;height:50px;"></a>
-                                        </li>
-                                    @endforeach
+                          
                                 </ul>
                                 <div class="others-option">
-                                    {{-- <div class="search-wrap">
-                                        <a href=".html">
-                                            <i class='bx bx-search'></i>
-                                        </a>
-                                    </div> --}}
                                     <button type="button" class="sidebar-menu" data-bs-toggle="modal"
                                         data-bs-target="#myModal2">
                                         <i class="flaticon-menu"></i>

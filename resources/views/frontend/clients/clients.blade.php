@@ -25,45 +25,47 @@
         </div>
     </div>
     
-
-    <section class="testimonials-area fun-blue-bg ptb-100">
-        <div class="container">
-            <div class="section-title">
-                <span>{{ __('message.custop') }}</span>
-                <h2 style="font-family: cairo;">{{ __('message.whcust') }}</h2>
-            </div>
-            <div class="row">
-                <div class="testimonials-top-wrap owl-carousel owl-theme">
-                    @foreach ($opinions as $opinion)
-                    <div class="testimonials-wrap">
-                        <img src="{{ asset('upload/image/' . $opinion->image) }}" style="border-radius: 50%" alt="Image">
-                        <div class="testimonials-content">
-                            <p>{!! $opinion->description !!}</p>
+   {{-- customer opinions slider --}}
+   <section class="testimonials-three pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span>{{ __('message.custop') }}</span>
+            <h2 style="font-family: cairo;">{{ __('message.whcust') }}</h2>
+        </div>
+        <div class="row">
+            <div class="testimonials-wrap-three owl-carousel owl-theme">
+                @foreach ($opinions as $opinion)
+                    <div class="testimonials-content-three">
+                        <div class="testimonials-top-content">
+                            <img src="{{ asset('upload/image/' . $opinion->image) }}" style="height: 40px;"
+                                style="border-radius: 10%" alt="Image">
                             <h3 style="font-family: cairo;">{{ $opinion->name }}</h3>
-                            <h3 style="font-family: cairo;">{{ $opinion->job }}</h3>
-                            <ul>
-                                <li>
-                                    <i class='bx bxs-star'></i>
-                                </li>
-                                <li>
-                                    <i class='bx bxs-star'></i>
-                                </li>
-                                <li>
-                                    <i class='bx bxs-star'></i>
-                                </li>
-                                <li>
-                                    <i class='bx bxs-star'></i>
-                                </li>
-                                <li>
-                                    <i class='bx bxs-star'></i>
-                                </li>
-                            </ul>
+                            <span>{{ $opinion->job }}</span>
                         </div>
+                        <p>{!! $opinion->description !!}</p>
+                        <ul>
+                            <li>
+                                <i class='bx bxs-star'></i>
+                            </li>
+                            <li>
+                                <i class='bx bxs-star'></i>
+                            </li>
+                            <li>
+                                <i class='bx bxs-star'></i>
+                            </li>
+                            <li>
+                                <i class='bx bxs-star'></i>
+                            </li>
+                            <li>
+                                <i class='bx bxs-star'></i>
+                            </li>
+                        </ul>
                     </div>
-                    @endforeach
-                </div>
+                @endforeach
             </div>
         </div>
-    </section>
+    </div>
+</section>
+{{-- end customer opinions slider --}}
 
 @endsection

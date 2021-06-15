@@ -347,8 +347,8 @@
                     @foreach ($opinions as $opinion)
                         <div class="testimonials-content-three">
                             <div class="testimonials-top-content">
-                                <img src="{{ asset('upload/image/' . $opinion->image) }}" style="height: 75px;"
-                                    style="border-radius: 50%" alt="Image">
+                                <img src="{{ asset('upload/image/' . $opinion->image) }}" style="height: 40px;"
+                                    style="border-radius: 10%" alt="Image">
                                 <h3 style="font-family: cairo;">{{ $opinion->name }}</h3>
                                 <span>{{ $opinion->job }}</span>
                             </div>
