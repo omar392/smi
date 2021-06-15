@@ -58,5 +58,17 @@ return[
     "whcust"=>'What they say about us',
     "foot"=>'SMI Express, we are pioneers in the field of express mail and electronic commerce, which has become an urgent and essential need that provides integrated and unique logistical and operational solutions away from traditional delivery methods and classic e-commerce methods to become a value-added requirement for every business or customer',
     "specialist"=>'Our support professionals are here',
-    
+    "name"=>'Please enter your name',
+    "email"=>'Please enter your email',
+    "subject"=>'Enter your subject',
+    "phone"=>'Enter your phone number',
+    "sms"=>'Enter your message',
+    "send"=>'Send',
+    "location"=>'Location',
+    "meet"=>'Meet Us',
+    "address"=>'Saudi Arabia',
+    "located"=>'We are located in:',
+    "available"=>'Available any time of the week',
+    "talk"=>'Talk To Us In Any Time',
+
 ];

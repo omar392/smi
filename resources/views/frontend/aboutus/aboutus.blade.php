@@ -1,14 +1,14 @@
 
 @extends('frontend.layouts.master')
-
+@section('pageTitle',__('message.aboutus'))
 @section('content')
 @include('frontend.layouts.sidebar')
 
-<div class="page-title-area item-bg-1 jarallax" data-jarallax='{"speed": 0.3}'>
+<div class="page-title-area item-bg-1 jarallax" data-jarallax='{"speed": 0.3}' style="background-image:url({{ asset('frontend/assets/img/coco.jpg') }});height: 500px;" >
     <div class="container">
         <div class="page-title-content">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-sm-6"><br><br>
                     <h2 style="font-family: cairo;">{{__('message.aboutus')}}</h2>
                 </div>
                 <div class="col-lg-6 col-sm-6">

@@ -1,9 +1,9 @@
 @extends('frontend.layouts.master')
-
+@section('pageTitle',__('message.opinion'))
 @section('content')
 @include('frontend.layouts.sidebar')
 
-    <div class="page-title-area item-bg-1 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="page-title-area item-bg-1 jarallax" data-jarallax='{"speed": 0.3}'style="background-image:url({{ asset('frontend/assets/img/choose-img-four.jpg') }});height: 500px;">
         <div class="container">
             <div class="page-title-content">
                 <div class="row align-items-center">

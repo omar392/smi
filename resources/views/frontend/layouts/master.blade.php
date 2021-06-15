@@ -39,8 +39,7 @@
 
     <link rel="icon" type="image/png" href="{{ asset('admin/assets/images/logo.png') }}">
 
-    <title>SMI Express</title>
-</head>
+    <title>@yield('pageTitle') - {{__('message.smi')}} </title></head>
 <style>
     body {
         font-family: 'Cairo';
