@@ -68,7 +68,7 @@
 
                 <div class="mobile-nav">
                     <a href="index.html" class="logo">
-                        <img src="{{ asset('admin/assets/images/logo.png') }}" alt="Logo">
+                        <img src="{{ asset('frontend/assets/img/logo/Asset 4hdpi.png') }}" alt="Logo">
                     </a>
                 </div>
 
@@ -76,7 +76,7 @@
                     <nav class="navbar navbar-expand-md navbar-light">
                         <div class="container">
                             <a class="navbar-brand" href="index.html">
-                                <img src="{{ asset('admin/assets/images/logo.png') }}"
+                                <img src="{{ asset('frontend/assets/img/logo/Asset 4hdpi.png') }}"
                                     style="width: 200px;height: 70px;" alt="Logo">
                             </a>
                             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -134,7 +134,6 @@
                                             {{ __('message.contact') }}
                                         </a>
                                     </li>
-                          
                                 </ul>
                                 <div class="others-option">
                                     <button type="button" class="sidebar-menu" data-bs-toggle="modal"

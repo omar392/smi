@@ -70,5 +70,8 @@ return[
     "located"=>'We are located in:',
     "available"=>'Available any time of the week',
     "talk"=>'Talk To Us In Any Time',
+    "track"=>'Subscripe Now',
+    "subscripe"=>'Subscribed successfully Thank you',
+    "sendmessage"=>'Message Send Successfully Thank You , We will reply soon',
 
 ];

@@ -26,6 +26,7 @@ Route::get('/questions',[App\Http\Controllers\Frontend\HomeController::class,'qu
 Route::post('/storecontactus',[App\Http\Controllers\Frontend\HomeController::class,'storecontactus'])->name('storecontactus');
 Route::get('/contact',[App\Http\Controllers\Frontend\CommonController::class,'contact'])->name('fronts.contact');
 Route::post('/contact/sava',[App\Http\Controllers\Frontend\CommonController::class,'sava'])->name('fronts.contact.sava');
+Route::post('/subscripe',[App\Http\Controllers\Frontend\HomeController::class,'subscripe'])->name('fronts.subscripe');
 
 
 
@@ -140,6 +141,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::prefix('inbox')->group(function(){
         Route::get('/view','App\Http\Controllers\Dashboard\InboxController@view')->name('inbox.view');
         Route::get('/delete/{id}','App\Http\Controllers\Dashboard\InboxController@delete')->name('inbox.delete');
+    });
+
+    //subscripes from website
+    Route::prefix('subscripes')->group(function(){
+        Route::get('/viewsubscripes','App\Http\Controllers\Dashboard\InboxController@views')->name('subscripes.view');
+        Route::get('/delete/{id}','App\Http\Controllers\Dashboard\InboxController@deletes')->name('subscripes.delete');
     });
 
 });

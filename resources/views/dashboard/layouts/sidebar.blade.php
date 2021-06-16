@@ -2,7 +2,7 @@
     <div class="main_sidebar_wrapper">
        
             <div class="form-group">
-            <a  href="{{route('fronts.index')}}"><img src="{{asset('admin/assets/images/logo.png')}}" style="height: 100px;width: 350px;"></a> 
+            <a  href="{{route('fronts.index')}}"><img src="{{asset('frontend/assets/img/logo/Asset 4xhdpi.png')}}"></a> 
             </div>
        
         <ul>
@@ -19,6 +19,7 @@
             <li><span class="glyphicon glyphicon-pencil"></span><a href="{{route('opinions.view')}}">أراء العملاء - قالوا عنا</a></li>
             <li><span class="glyphicon glyphicon-ok"></span><a href="{{route('politics.view')}}">السياسات و الضوابط</a></li>
             <li><span class="glyphicon glyphicon-send"></span><a href="{{route('inbox.view')}}">وارد الرسائل من على الموقع</a></li>
+            <li><span class="glyphicon glyphicon-send"></span><a href="{{route('subscripes.view')}}">وارد الاشتراكات من على الموقع</a></li>
         </ul>
     </div>
 </div>

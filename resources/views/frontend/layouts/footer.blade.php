@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="single-widget">
-                    <img src="{{ asset('admin/assets/images/logo.png') }}" style="width: 250px;hieght: 150px;" alt="Image">
+                    <img src="{{ asset('frontend/assets/img/logo/Asset 4hdpi.png') }}" style="width: 250px;hieght: 150px;" alt="Image">
                     <p>{{__('message.foot')}}</p>
                     <ul class="social-link">
                         <li>

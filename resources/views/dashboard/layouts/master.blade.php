@@ -10,7 +10,7 @@
     <link href="{{asset('dashboard/css/icon.css')}}" rel="stylesheet">
     <link href="{{asset('dashboard/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('dashboard/css/ar.css')}}" rel="stylesheet" class="lang_css arabic">
-    <link rel="icon" type="image/png" href="{{asset('admin/assets/images/logo.png')}}"> 
+    <link rel="icon" type="image/png" href="{{asset('frontend/assets/img/logo/Asset 4hdpi.png')}}"> 
     <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script> 
 </head>
 <style>
@@ -51,7 +51,7 @@ body {
         <!--Start left sidebar-->
         <div class="user_details close_user_details  bring_left">
             <div class="user_area">
-                <img class="img-thumbnail img-rounded bring_right" src="{{asset('admin/assets/images/logo.png')}}">
+                <img class="img-thumbnail img-rounded bring_right" src="{{asset('frontend/assets/img/logo/Asset 4hdpi.png')}}">
 
                 <h1 class="h3">SMI Express</h1>
                 <p>                    

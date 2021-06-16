@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/rtl.css') }}">
     @endif
 
-    <link rel="icon" type="image/png" href="{{ asset('admin/assets/images/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/assets/img/logo/Asset 4hdpi.png') }}">
 
     <title>@yield('pageTitle') - {{__('message.smi')}} </title></head>
 <style>

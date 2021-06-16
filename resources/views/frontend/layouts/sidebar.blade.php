@@ -11,7 +11,7 @@
                     </button>
                     <h2 class="modal-title" id="myModalLabel2">
                         <a href="index.html">
-                            <img src="{{asset('admin/assets/images/logo.png')}}" alt="Logo">
+                            <img src="{{asset('frontend/assets/img/logo/Asset 4hdpi.png')}}" alt="Logo">
                         </a>
                     </h2>
                 </div>

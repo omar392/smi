@@ -17,6 +17,7 @@ use App\Models\Service;
 use App\Models\Slider;
 use App\Models\Social;
 use App\Models\Solution;
+use App\Models\Subscripe;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
@@ -110,7 +111,14 @@ class HomeController extends Controller
         $data->message = $request->message;
         
         $data->save();
-        return redirect()->route('fronts.questions')->with('success','تم الإرسال بنجاح شكرا جزيلا لك سوف يصلك الرد قريبا');
+        return redirect()->route('fronts.questions')->with('success',__('message.sendmessage'));
         
     }
+
+  public function subscripe(Request $request){
+      $data =  new Subscripe();
+      $data->email = $request->email;
+      $data->save();
+      return redirect()->route('fronts.index')->with('success',__('message.subscripe'));
+  }
 }

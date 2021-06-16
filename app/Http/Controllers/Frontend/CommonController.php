@@ -25,6 +25,6 @@ class CommonController extends Controller
         $data->message = $request->message;
         $data->save();
         
-        return redirect()->route('fronts.contact')->with('success','تم الإرسال بنجاح شكرا جزيلا لك سوف يصلك الرد قريبا');
+        return redirect()->route('fronts.contact')->with('success',__('message.sendmessage'));
     }
 }

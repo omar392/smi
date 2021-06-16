@@ -16,7 +16,7 @@
     </div>
     <div class=" col-sm-4 col-xs-12 user_header_area bring_left left_text">
         <div class="user_info inline-block">
-            <img src="{{asset('admin/assets/images/logo.png')}}" alt="" class="img-circle">
+            <img src="{{asset('frontend/assets/img/logo/Asset 4hdpi.png')}}" alt="" class="img-circle">
             <span class="h4 nomargin user_name">SMI Express</span>
             <span class="glyphicon glyphicon-cog"></span>
         </div>
